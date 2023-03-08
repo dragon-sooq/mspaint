@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>mspaint</h1>
-<img src="/img/scss2css.gif">
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <title>Title</title>
+    </head>
+    <body>
+        <div id="about-paint" style="text-align:center;margin-left: 9%;margin-right: 9%;">
+            <h1><img src="./images/icons/32.png"> Paint by Self  </h1>
+            <p></p>
+        </div>
+        <div class="jspaint">
+            <header class="menus">
+                <div class="menu-container">
+                    <div class="menu-button file-menu-button" data-index="1">Save</div>
+                    <div class="menu-button file-menu-button" data-index="2">Load from url</div>
+                    <div class="menu-button file-menu-button" data-index="3">Redraw</div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="left">
+                    <div class="left2">
+                        <div class="tool-area"></div>
+                        <div class="tool-arg"></div>
+                    </div>
+                </div>
+                <div class="right">
+    <!--                <canvas id="id-canvas-real" touch-action="none" width="529" height="683" style="width: 529px; height: 683px; cursor: url(&quot;images/cursors/airbrush.png&quot;) 7 22, crosshair;" class=""></canvas>-->
+                    <canvas id="id-canvas-real" touch-action="none" width="529" height="683"></canvas>
+                    <canvas id="id-canvas-temp" touch-action="none" width="529" height="683"></canvas>
+                </div>
+            </div>
+            <div class="foot-tip">
+                <div class="Colors-component">
+                    <div class="color-box">
+                        <div class="swatch current-colors">
+                        </div>
+                        <div class="palette"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
 </html>
